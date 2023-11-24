@@ -1,0 +1,8 @@
+streamlit
+pandas
+streamlit_gsheets
+streamlit_extras
+streamlit_folium
+folium==0.14.0
+gspread
+GSheetsConnection

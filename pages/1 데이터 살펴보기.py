@@ -12,8 +12,6 @@ df = pd.read_csv("./datas/life_trash.csv")
 if 'data' not in st.session_state:
     st.session_state['data'] = pd.DataFrame()
 
-df = df(index = False)
-
 st.session_state['data'] = st.data_editor(df, use_container_width=True)
 
 st.write("데이터 사이에는 어떤 관계가 있나요:question::question:")

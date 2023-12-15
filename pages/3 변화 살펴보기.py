@@ -1,7 +1,9 @@
 import streamlit as st
 from streamlit_folium import st_folium, folium_static
 import pandas as pd
+import random
 
+st.sidebar.caption(f'{st.session_state['loc']} 환경정책과 {st.session_state['name']}
 
 st.image("images/bg.png")
 st.header('	:seedling:변화 살펴보기', divider="rainbow")

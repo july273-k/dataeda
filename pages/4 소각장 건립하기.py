@@ -2,17 +2,23 @@ import streamlit as st
 import pandas as pd
 import time
 from gspread.exceptions import APIError
-
+import random
 
 from streamlit_gsheets import GSheetsConnection
 
 st.image("images/bg.png")
 st.header('	:seedling:소각장 건립하기', divider="rainbow")
 
+
+
 if 'name' not in st.session_state:
     st.session_state['name'] = 'noname'
 if 'data' not in st.session_state:
     st.session_state['data'] = pd.read_csv("datas/life_trash.csv")
+if 'loc' not in st.session_state:
+    st.session_state['loc'] = "관악구"
+
+st.sidebar.caption(f'{st.session_state['loc']} 환경정책과 {st.session_state['name']}
 
 df = st.session_state['data']
 

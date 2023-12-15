@@ -9,6 +9,12 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 from folium import plugins
 from folium.features import DivIcon
+import random
+
+
+st.sidebar.caption(f'{st.session_state['loc']} 환경정책과 {st.session_state['name']}
+
+
 st.image("images/bg.png")
 st.header('	:seedling:지역 분석하기', divider="rainbow")
 geo_json='https://raw.githubusercontent.com/southkorea/seoul-maps/master/kostat/2013/json/seoul_municipalities_geo_simple.json'

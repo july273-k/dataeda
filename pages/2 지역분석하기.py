@@ -11,6 +11,8 @@ from folium import plugins
 from folium.features import DivIcon
 import random
 
+if 'loc' not in st.session_state:
+    st.session_state['loc']="관악구"
 
 st.sidebar.caption(f'{st.session_state['loc']} 환경정책과 {st.session_state['name']}
 
